@@ -11,6 +11,13 @@
 		1E0FCFD721DC66C2005BDE68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E0FCFD521DC66C2005BDE68 /* Main.storyboard */; };
 		1E0FCFD921DC66C4005BDE68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E0FCFD821DC66C4005BDE68 /* Assets.xcassets */; };
 		1E0FCFDC21DC66C4005BDE68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E0FCFDA21DC66C4005BDE68 /* LaunchScreen.storyboard */; };
+		1E0FCFE521DC67E1005BDE68 /* GhibliMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FCFE421DC67E1005BDE68 /* GhibliMovieViewController.swift */; };
+		1E0FCFE721DC67FE005BDE68 /* GhibliDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FCFE621DC67FE005BDE68 /* GhibliDetailedViewController.swift */; };
+		1E0FCFE921DC688C005BDE68 /* GhibliCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FCFE821DC688C005BDE68 /* GhibliCustomCell.swift */; };
+		1E0FCFEB21DC6ABB005BDE68 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FCFEA21DC6ABB005BDE68 /* ImageHelper.swift */; };
+		1E0FCFED21DC6ACA005BDE68 /* GhibliMoviesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FCFEC21DC6ACA005BDE68 /* GhibliMoviesAPI.swift */; };
+		1E0FCFEF21DC6AE8005BDE68 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FCFEE21DC6AE8005BDE68 /* AppError.swift */; };
+		1E0FCFF121DC6B27005BDE68 /* GhibliMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FCFF021DC6B27005BDE68 /* GhibliMovieModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		1E0FCFD821DC66C4005BDE68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E0FCFDB21DC66C4005BDE68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E0FCFDD21DC66C4005BDE68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E0FCFE421DC67E1005BDE68 /* GhibliMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhibliMovieViewController.swift; sourceTree = "<group>"; };
+		1E0FCFE621DC67FE005BDE68 /* GhibliDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhibliDetailedViewController.swift; sourceTree = "<group>"; };
+		1E0FCFE821DC688C005BDE68 /* GhibliCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhibliCustomCell.swift; sourceTree = "<group>"; };
+		1E0FCFEA21DC6ABB005BDE68 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		1E0FCFEC21DC6ACA005BDE68 /* GhibliMoviesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhibliMoviesAPI.swift; sourceTree = "<group>"; };
+		1E0FCFEE21DC6AE8005BDE68 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		1E0FCFF021DC6B27005BDE68 /* GhibliMovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhibliMovieModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,13 @@
 			children = (
 				1E0FCFE321DC66E1005BDE68 /* Support Docs */,
 				1E0FCFD521DC66C2005BDE68 /* Main.storyboard */,
+				1E0FCFF021DC6B27005BDE68 /* GhibliMovieModel.swift */,
+				1E0FCFEE21DC6AE8005BDE68 /* AppError.swift */,
+				1E0FCFEC21DC6ACA005BDE68 /* GhibliMoviesAPI.swift */,
+				1E0FCFEA21DC6ABB005BDE68 /* ImageHelper.swift */,
+				1E0FCFE821DC688C005BDE68 /* GhibliCustomCell.swift */,
+				1E0FCFE621DC67FE005BDE68 /* GhibliDetailedViewController.swift */,
+				1E0FCFE421DC67E1005BDE68 /* GhibliMovieViewController.swift */,
 				1E0FCFD821DC66C4005BDE68 /* Assets.xcassets */,
 				1E0FCFDD21DC66C4005BDE68 /* Info.plist */,
 			);
@@ -140,7 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E0FCFE521DC67E1005BDE68 /* GhibliMovieViewController.swift in Sources */,
+				1E0FCFF121DC6B27005BDE68 /* GhibliMovieModel.swift in Sources */,
+				1E0FCFEB21DC6ABB005BDE68 /* ImageHelper.swift in Sources */,
+				1E0FCFED21DC6ACA005BDE68 /* GhibliMoviesAPI.swift in Sources */,
 				1E0FCFD221DC66C2005BDE68 /* AppDelegate.swift in Sources */,
+				1E0FCFE721DC67FE005BDE68 /* GhibliDetailedViewController.swift in Sources */,
+				1E0FCFE921DC688C005BDE68 /* GhibliCustomCell.swift in Sources */,
+				1E0FCFEF21DC6AE8005BDE68 /* AppError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
