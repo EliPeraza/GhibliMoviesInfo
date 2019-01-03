@@ -28,7 +28,6 @@ class GhibliMovieViewController: UIViewController {
     movieTableView.delegate = self
     searchBar.delegate = self
     getMovieData()
-    dump(ghibliMovies)
     title = "Ghibli Studio Movies"
   }
   
@@ -40,6 +39,7 @@ class GhibliMovieViewController: UIViewController {
         }
         if let data = data {
           self.ghibliMovies = data
+          dump(data)
         }
       }
     }
@@ -50,7 +50,6 @@ class GhibliMovieViewController: UIViewController {
       let ghibliDetailedVC = segue.destination as? GhibliDetailedViewController else {return}
     
     let currentMovieToSegue = ghibliMovies[indexPath.row]
-    
     ghibliDetailedVC.selectedMovieDetails = currentMovieToSegue
   }
   
@@ -67,7 +66,6 @@ extension GhibliMovieViewController: UITableViewDataSource {
     
     let currentMovie = ghibliMovies[indexPath.row]
     cell.movieTitle.text = currentMovie.title
-    
     cell.movieImage.image = ImageSetter.setPicture(str: currentMovie.title)
     
     return cell
@@ -94,7 +92,6 @@ extension GhibliMovieViewController: UISearchBarDelegate {
       } else {
         ghibliMovies = ghibliMovies.filter{$0.title.lowercased().contains(searchText.lowercased())}
       }
-      
       
     }
   }

@@ -23,7 +23,6 @@ class GhibliDetailedViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     setInfo()
-    dump(selectedMovieDetails)
     title = selectedMovieDetails.title
   }
   
@@ -38,12 +37,9 @@ class GhibliDetailedViewController: UIViewController {
     director.text = "Director: " + selectedMovieDetails.director
     
     if let date = selectedMovieDetails.release_date{
-      
       releaseDate.text = "Release year: " + date
-      
     } else {
       releaseDate.text = "Release year: Unknown"
-      
     }
     
     imageDetailed.image = ImageSetter.setPicture(str: selectedMovieDetails.title)
