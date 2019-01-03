@@ -86,10 +86,17 @@ extension GhibliMovieViewController: UISearchBarDelegate {
   func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
     searchBar.resignFirstResponder()
     
-    guard let searchText = searchBar.text else {return}
-    
-    ghibliMovies = ghibliMovies.filter{$0.title.lowercased().contains(searchText.lowercased())}
-    
+    if let searchText = searchBar.text {
+      
+      if searchText == "" {
+        _ = getMovieData()
+        movieTableView.reloadData()
+      } else {
+        ghibliMovies = ghibliMovies.filter{$0.title.lowercased().contains(searchText.lowercased())}
+      }
+      
+      
+    }
   }
   
   

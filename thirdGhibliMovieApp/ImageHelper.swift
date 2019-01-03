@@ -48,7 +48,6 @@ struct ImageSetter {
       imageToSet = UIImage(named: ImageHelper.fromUpOnPoppyHill.rawValue) ?? UIImage(named: "fromUpOnPoppyHill")!
     case "grave of the fireflies":
       imageToSet = UIImage(named: ImageHelper.graveOfTheFireflies.rawValue) ?? UIImage(named: "graveOfTheFireflies")!
-      
     case "howl's moving castle":
       imageToSet = UIImage(named: ImageHelper.howlsMovingCastle.rawValue) ?? UIImage(named: "howlsMovingCastle")!
     case "kiki's delivery service":
@@ -77,28 +76,18 @@ struct ImageSetter {
       imageToSet = UIImage(named: ImageHelper.theTaleOfPrincessKaguya.rawValue) ?? UIImage(named: "theTaleOfPrincessKaguya")!
     case "the wind rises":
       imageToSet = UIImage(named: ImageHelper.theWindsRises.rawValue) ?? UIImage(named: "theWindsRises")!
-      
     case "when marnie was there":
       imageToSet = UIImage(named: ImageHelper.whenMarnieWasThere.rawValue) ?? UIImage(named: "whenMarnieWasThere")!
-      
     case "whisper of the heart":
       imageToSet = UIImage(named: ImageHelper.whisperOfTheHeart.rawValue) ?? UIImage(named: "whisperOfTheHeart")!
-      
     case "totoro":
-      
       imageToSet = UIImage(named: ImageHelper.totoro.rawValue) ?? UIImage(named: "totoro")!
-      
     case "ghibliIconPic":
-      
       imageToSet = UIImage(named: ImageHelper.ghibliIconPic.rawValue) ?? UIImage(named: "ghibliIconPic")!
-      
     case "dotSpirit":
-      
       imageToSet = UIImage(named: ImageHelper.dotSpirit.rawValue) ?? UIImage(named: "dotSpirit")!
-      
     default:
       imageToSet = UIImage(named: "ghibliIconPic")!
-      
     }
     return imageToSet
   }
