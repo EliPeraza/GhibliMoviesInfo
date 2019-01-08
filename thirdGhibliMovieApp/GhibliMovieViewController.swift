@@ -23,12 +23,13 @@ class GhibliMovieViewController: UIViewController {
   }
   
   override func viewDidLoad() {
+    
     super.viewDidLoad()
     movieTableView.dataSource = self
     movieTableView.delegate = self
     searchBar.delegate = self
     getMovieData()
-    title = "Ghibli Studio Movies"
+    title = "Studio Ghibli Movies"
   }
   
   func getMovieData() {
@@ -91,6 +92,7 @@ extension GhibliMovieViewController: UISearchBarDelegate {
         movieTableView.reloadData()
       } else {
         ghibliMovies = ghibliMovies.filter{$0.title.lowercased().contains(searchText.lowercased())}
+        
       }
       
     }
